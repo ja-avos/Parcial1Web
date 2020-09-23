@@ -1,0 +1,22 @@
+{
+  "name": "parcial1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ja-avos/Parcial1Web.git"
+  },
+  "author": "Juan Andrés Avelino Ospina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ja-avos/Parcial1Web/issues"
+  },
+  "homepage": "https://github.com/ja-avos/Parcial1Web#readme",
+  "devDependencies": {
+    "eslint": "^7.9.0"
+  }
+}

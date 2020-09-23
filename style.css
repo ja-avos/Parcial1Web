@@ -4,4 +4,35 @@
 }
 #shoppingBtn {
     color: black;
+    float: right;
+    padding-right: 2rem;
+}
+#shoppingBtn img {
+    height: 50px;
+}
+.banner img {
+    width: 100%;
+}
+nav {
+    height: 5rem;
+}
+.card {
+    padding: 0%;
+    min-width: 18rem;
+    max-width: 22rem;
+}
+.card img {
+    margin: 0%;
+    width: 100%;
+    max-height: 200px;
+}
+
+.pink-color {
+    background-color: antiquewhite;
+    border-color: black;
+}
+
+.rose-color {
+    background-color: indianred;
+    border-color: black;
 }

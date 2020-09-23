@@ -1,116 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Juan Andrés Avelino Ospina" />
-    <title>Restaurant and Lounge</title>
-    <!-- CSS only -->
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-    crossorigin="anonymous"
-/>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container-fluid">
-      <header class="pt-4">
-        <div class="row">
-            <div class="col-10">
-                <h1 id="restName">Restaurant & Lounge</h1>
-            </div>
-            <div class="col-2">
-                <a href="#" onclick="shopping(); return;" id="shoppingBtn"><img src="https://imgur.com/1EKrQIi.png" height="50px;" alt="Shopping car">
-                3 items
-            </a>
-            </div>
-        </div>
-        <hr>
-      </header>
-      <section class="banner">
-        <img src="https://i.imgur.com/S8Ffdqa.png" width="100%" alt="A delicious burger">
-      </section>
-      <hr>
-<nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Juan Andrés Avelino Ospina" />
+        <title>Restaurant and Lounge</title>
+        <!-- CSS only -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header class="pt-4">
+                <div class="row">
+                    <div class="col-10">
+                        <h1 id="restName">Restaurant & Lounge</h1>
+                    </div>
+                    <div class="col-2">
+                        <a
+                            href="#"
+                            id="shoppingBtn"
+                            ><img
+                                src="https://imgur.com/1EKrQIi.png"
+                                alt="Shopping car"
+                            />
+                            <p class="d-inline" id="carQty">0 items</p>
+                        </a>
+                    </div>
+                </div>
+                <hr />
+                <div class="banner">
+                    <img
+                        src="https://i.imgur.com/S8Ffdqa.png"
+                        alt="A delicious burger"
+                    />
+                </div>
+            </header>
+            <hr />
+            <nav
+                class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark"
+            >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#" onclick="burguers(); return;">Burgers</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#" onclick="tacos(); return;">Tacos</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#" onclick="salads(); return;">Salads</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#" onclick="desserts(); return;">Desserts</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#" onclick="drinks(); return;">Drinks & Sides</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<hr>
-<main>
-      <section id="Burgers">
-        <h2 class="text-center">Burgers</h2>
-        <hr>    
-        <div class="card-deck" id="BurguersDeck">
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="burgersBtn"
+                                >Burgers</a
+                            >
+                        </li>
+                        <li class="nav-item active">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="tacosBtn"
+                                >Tacos</a
+                            >
+                        </li>
+                        <li class="nav-item active">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="saladsBtn"
+                                >Salads</a
+                            >
+                        </li>
+                        <li class="nav-item active">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="dessertsBtn"
+                                >Desserts</a
+                            >
+                        </li>
+                        <li class="nav-item active">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                id="drinksBtn"
+                                >Drinks & Sides</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <hr />
+            <main>
+                <section id="Burgers">
+                    <h2 class="text-center">Burgers</h2>
+                    <hr />
+                    <div class="card-deck" id="BurguersDeck"></div>
+                </section>
+                <section id="Tacos" hidden>
+                    <h2 class="text-center">Tacos</h2>
+                    <hr />
+                    <div class="card-deck row" id="TacosDeck"></div>
+                </section>
+                <section id="Salads" hidden>
+                    <h2 class="text-center">Salads</h2>
+                    <hr />
+                    <div class="card-deck row" id="SaladsDeck"></div>
+                </section>
+                <section id="Desserts" hidden>
+                    <h2 class="text-center">Desserts</h2>
+                    <hr />
+                    <div class="card-deck row" id="DessertsDeck"></div>
+                </section>
+                <section id="Drinks_and_Sides" hidden>
+                    <h2 class="text-center">Drinks & Sides</h2>
+                    <hr />
+                    <div class="card-deck row" id="Drinks_and_SidesDeck"></div>
+                </section>
+                <section id="car" hidden>
+                    <h2 class="text-center">Order detail</h2>
+                    <table class="table table-striped" id="ordersTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Qty.</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Unit Price</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ordersBody">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>3</td>
+                                <td>Veggie burguer with indian sauce</td>
+                                <td>5.0</td>
+                                <td>15.0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-9 d-inline">
+                            <h5 class="d-inline">
+                                Total: $
+                            </h5>
+                            <p class="d-inline" id="totalSum"><strong>$0.0</strong></p>
+                        </div>
+                        <div class="col-3">
+                            <button
+                                class="btn rose-color"
+                                data-toggle="modal"
+                                data-target="#cancelOrderModal"
+                            >
+                                Cancel
+                            </button>
+                            <button class="btn pink-color" id="placeOrderBtn">
+                                Confirm order
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="cancelOrderModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="cancelOrderModal"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cancelOrderModalTitle">
+                                Cancel the order
+                            </h5>
+                            <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                            >
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure about cancelling the order?
+                        </div>
+                        <div class="modal-footer d-block">
+                            <button
+                                type="button"
+                                class="btn pink-color float-right"
+                                data-dismiss="modal"
+                                id="cancelOrderBtn"
+                            >
+                                Yes, I want to cancel the order
+                            </button>
+                            <button
+                                type="button"
+                                class="btn rose-color float-right"
+                                data-dismiss="modal"
+                            >
+                                No, I want to continue adding products
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="text-center py-3">
+                Contact us: +57 3222228631 - info@restaurant.com - @restaurant
+            </footer>
         </div>
-      </section>
-      <section id="Tacos" hidden>
-        <h2 class="text-center">Tacos</h2>
-        <hr>    
-        <div class="card-deck row" id="TacosDeck">
-        </div>
-      </section>
-      <section id="Salads" hidden>
-        <h2 class="text-center">Salads</h2>
-        <hr>    
-        <div class="card-deck row" id="SaladsDeck">
-        </div>
-      </section>
-      <section id="Desserts" hidden>
-        <h2 class="text-center">Desserts</h2>
-        <hr>    
-        <div class="card-deck row" id="DessertsDeck">
-        </div>
-      </section>
-      <section id="Drinks and Sides" hidden>
-        <h2 class="text-center">Drinks & Sides</h2>
-        <hr>    
-        <div class="card-deck row" id="Drinks and SidesDeck">
-        </div>
-      </section>
-    </main>
-<footer class="text-center py-3">
-    Contact us: +57 3222228631 - info@restaurant.com - @restaurant
-</footer>
-  </div>
-    <!-- JS, Popper.js, and jQuery -->
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"
-></script>
-<script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"
-></script>
-<script src="script.js"></script>
-</body>
+        <!-- JS, Popper.js, and jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </body>
 </html>
